@@ -26,8 +26,6 @@ navigation{
 
 .card_row{
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
     margin-bottom: 15px;
 }
 

@@ -1,3 +1,29 @@
+.body{
+    background-color: orange;
+}
+
+.topbar{
+    background-color: black;
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+}
+
+a{
+	font-size: 17px;
+	color: white;
+	padding-right: 60px;
+}
+
+navigation{
+    color: white;
+}
+
 .card_row{
     display: flex;
     justify-content: space-between;

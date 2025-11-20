@@ -14,6 +14,11 @@ body{
 	height: 60px;
 }
 
+.logobox{
+    display: flex;
+    align-items: center;
+}
+
 a{
 	font-size: 17px;
 	color: white;
@@ -27,7 +32,9 @@ a{
 .backhomepage{
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 3px rgb(124 45 14);;
+    text-shadow: 2px 2px 3px rgb(124 45 14);
+    text-align: center;
+    align-content: center;
 }
 
 .card_row{

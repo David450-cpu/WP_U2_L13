@@ -21,8 +21,8 @@ body{
 
 .logo{
 	margin-right: 10px;
-	height: 60px;
-	width: 60px;
+	height: 55px;
+	width: 55px;
 }
 
 a{
@@ -41,7 +41,7 @@ a{
     text-shadow: 2px 2px 3px rgb(124 45 14);
     text-align: center;
     align-content: center;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .card_row{

@@ -38,7 +38,7 @@ a{
 }
 
 .card_div{
-    box-shadow: 2px 2px 5px orange;
+    box-shadow: 2px 2px 5px rgb(216, 143, 7);
     width: 100px;
     height: 150px;
     border: 2px solid rgb(124 45 14);

@@ -1,9 +1,9 @@
 body{
-    background-color: orange;
+    background-color: rgb(236, 203, 142);
 }
 
 .topbar{
-    background-color: black;
+    background-color: orange;
     align-items: center;
     padding: 10px 30px;
     margin-top: 40px;
@@ -26,7 +26,9 @@ a{
 
 .card_row{
     display: flex;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .card_div{
@@ -34,4 +36,6 @@ a{
     width: 100px;
     height: 150px;
     border: 2px solid black;
+    margin: 20px;
+    background-color: white;
 }

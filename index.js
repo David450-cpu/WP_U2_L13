@@ -1,1 +1,3 @@
-function flipCard()
+function flipCard(){
+    let image =
+}

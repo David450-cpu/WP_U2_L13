@@ -30,6 +30,7 @@ navigation{
 }
 
 .card_div{
+    box-shadow: 2px 2px 5px red;
     width: 100px;
     height: 150px;
     border: 2px solid black;

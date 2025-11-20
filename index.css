@@ -24,6 +24,11 @@ a{
     color: white;
 }
 
+.backhomepage{
+    text-decoration: none;
+    color: rgb(110, 62, 34);
+}
+
 .card_row{
     display: flex;
     justify-content: center;
@@ -32,7 +37,7 @@ a{
 }
 
 .card_div{
-    box-shadow: 2px 2px 5px red;
+    box-shadow: 2px 2px 5px orange;
     width: 100px;
     height: 150px;
     border: 2px solid black;

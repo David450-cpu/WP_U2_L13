@@ -1,3 +1,4 @@
-function flipCard(){
-    let image =
+function flipCard(id){
+    let box = document.getElementById(id);
+    box.appendChild(image);
 }

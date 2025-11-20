@@ -27,6 +27,7 @@ a{
 .backhomepage{
     text-decoration: none;
     color: rgb(110, 62, 34);
+    text-shadow: 2px 2px 5px white;
 }
 
 .card_row{

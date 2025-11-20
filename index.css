@@ -26,7 +26,7 @@ a{
 
 .backhomepage{
     text-decoration: none;
-    color: rgb(110, 62, 34);
+    color: rgb(124 45 14);
     text-shadow: 2px 2px 5px white;
 }
 
@@ -41,7 +41,7 @@ a{
     box-shadow: 2px 2px 5px orange;
     width: 100px;
     height: 150px;
-    border: 2px solid black;
+    border: 2px solid rgb(124 45 14);
     margin: 20px;
     background-color: white;
 }

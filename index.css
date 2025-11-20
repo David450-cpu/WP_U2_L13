@@ -19,6 +19,13 @@ body{
     align-items: center;
 }
 
+.logo{
+	margin-right: 10px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
 a{
 	font-size: 17px;
 	color: white;

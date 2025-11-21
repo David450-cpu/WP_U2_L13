@@ -1,4 +1,4 @@
 function flipCard(id){
-    let box = document.getElementById(id);
-    box.appendChild(image);
+    let image = document.getElementById(id);
+    box.textContent(image);
 }

@@ -1,4 +1,6 @@
 function flipCard(id){
-    let image = document.getElementById(id);
-    box.textContent(image);
+    let card = document.getElementById(id);
+    let image = document.createElement("img");
+    image.src = "resources/cards/bearcard.png";
+    card.appendChild(image)
 }

@@ -4,3 +4,7 @@ function flipCard(id){
     image.src = "resources/cards/bearcard.png";
     card.appendChild(image)
 }
+
+function restartbutton(){
+	window.location.reload()
+}

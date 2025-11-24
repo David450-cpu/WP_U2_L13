@@ -48,8 +48,8 @@ a{
 
 h2{
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 3px rgb(124, 45, 14);
+    color: rgb(124, 45, 14);
+    text-shadow: 2px 2px 3px rgb(216, 143, 7);
 }
 
 p{

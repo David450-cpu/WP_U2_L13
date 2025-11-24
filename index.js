@@ -6,6 +6,7 @@ function flipCard(id){
         let random_image = Math.floor(Math.random()*image_list.length);
         image.src = `resources/cards/${image_list[random_image]}`;
         card.appendChild(image);
+        card.setAttribute("onclick", "none");
     }
 }
 

@@ -59,3 +59,10 @@ p{
     color: rgb(124, 45, 14);
     text-shadow: 1px 1px 2px rgb(216, 143, 7);
 }
+
+.rulesbox{
+    background-color: rgb(216, 143, 7);
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+}

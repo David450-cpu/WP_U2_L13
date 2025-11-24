@@ -46,3 +46,14 @@ a{
 
 /* ----------------------- Addtional stuff can be added below ----------------------- */
 
+h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(124, 45, 14);
+}
+
+p{
+    font-size: 20px;
+    color: rgb(124, 45, 14);
+    text-shadow: 1px 1px 2px rgb(216, 143, 7);
+}

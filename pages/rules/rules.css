@@ -48,8 +48,8 @@ a{
 
 h2{
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 3px rgb(216, 143, 7);
+    color: rgb(216, 143, 7);
+    text-shadow: 2px 2px 3px rgb(124, 45, 14);
 }
 
 p{
@@ -62,7 +62,7 @@ p{
 .rulesbox{
     text-align: center;
     margin-top: 100px;
-    background-color: rgb(216, 143, 7);
+    background-color: white;
     width: 150px;
     height: 50px;
     padding: 5px;

@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(236, 203, 142);
+}
+
+.topbar{
+    background-color: rgb(216, 143, 7);
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.logobox{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+	margin-right: 10px;
+	height: 55px;
+	width: 55px;
+}
+
+a{
+	font-size: 17px;
+	color: white;
+	padding-right: 60px;
+}
+
+.navigation{
+    color: white;
+}
+
+.backhomepage{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(124 45 14);
+    text-align: center;
+    align-content: center;
+    margin-left: 15px;
+}

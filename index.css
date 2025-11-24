@@ -63,6 +63,8 @@ a{
 }
 
 .card_div img{
+    width: 100px;
+    height: 150px;
     object-fit: cover;
 }
 

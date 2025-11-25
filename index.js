@@ -14,6 +14,14 @@ function checkForMatch(){
     if (random_image !== random_image){
         card.setAttribute("image", "none")
     }
+
+    if (random_image === random_image){
+        match = true;
+        if (match = true){
+            /* cards stay flipped somehow */
+        }
+    
+    }
 }
 
 function restartbutton(){

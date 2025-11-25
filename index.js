@@ -8,10 +8,12 @@ function flipCard(id){
     card.appendChild(image);
     card.setAttribute("onclick", "none");
     image_list.splice(random_image, 1);
-    checkForMatch();
+
+    /* if (somehow check if 2 cards are flipped){ */
+       /* checkForMatch(); } */
 }
 
-function checkForMatch(){
+function checkForMatch(){   /* somehow change random_image var to the first 2 flipped cards. random_image cant go to this function */
     if (random_image !== random_image){
         card.setAttribute("image", "none")
     }

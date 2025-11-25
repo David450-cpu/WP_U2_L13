@@ -10,6 +10,12 @@ function flipCard(id){
     image_list.splice(random_image, 1);
 }
 
+function checkForMatch(){
+    if (random_image !== random_image){
+        card.setAttribute("image", "none")
+    }
+}
+
 function restartbutton(){
 	window.location.reload()
 }

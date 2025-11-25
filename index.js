@@ -8,6 +8,7 @@ function flipCard(id){
     card.appendChild(image);
     card.setAttribute("onclick", "none");
     image_list.splice(random_image, 1);
+    checkForMatch();
 }
 
 function checkForMatch(){

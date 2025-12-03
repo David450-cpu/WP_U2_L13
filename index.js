@@ -16,11 +16,15 @@ function flipCard(id){
 }
 
 function checkForMatch(){
+    let first_card = next_up[0]
+    let second_card = next_up[1]
     console.log(next_up);
-    if (`resources/cards/${next_up[0]}` !== `resources/cards/${next_up[1]}`){
+    console.log(next_up[0].children[0].src)
+    if (next_up[0].children[0].src !== next_up[1].children[0].src){
         console.log("Not a match");
     }
-    if (`resources/cards/${next_up[0]}` === `resources/cards/${next_up[1]}`){
+    //next_up[0].children[0].scr
+    if (next_up[0].children[0].src === next_up[1].children[0].src){
         console.log("Is a match");
         let match = true;
         if (match = true){

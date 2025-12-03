@@ -24,7 +24,7 @@ function checkForMatch(){
         console.log("Is a match")
         let match = true;
         if (match = true){
-            // cards WILL stay flipped
+            // Cards WILL stay flipped
         }
     }
     next_up = []

@@ -17,7 +17,7 @@ function flipCard(id){
 
 function checkForMatch(){
     console.log(next_up)
-    if (next_up[0] !== next_up[1]){
+    if (`../resources/cards/${next_up[0]}` !== `../resources/cards/${next_up[1]}`){
         console.log("Not a match")
     }
     if (next_up[0] === next_up[1]){

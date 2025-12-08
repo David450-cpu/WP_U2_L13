@@ -23,8 +23,8 @@ function checkForMatch(){
     if (next_up[0].children[0].src !== next_up[1].children[0].src){
         console.log("Not a match");
     }
-    card.splice(next_up[0].children[0].src)
-    card.splice(next_up[1].children[0].src)
+    card.splice(next_up[0].children[0].src);
+    card.splice(next_up[1].children[0].src);
     //next_up[0].children[0].scr
     if (next_up[0].children[0].src === next_up[1].children[0].src){
         console.log("Is a match");

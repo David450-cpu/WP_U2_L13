@@ -19,11 +19,11 @@ function checkForMatch(){
     //let first_card = next_up[0]
     //let second_card = next_up[1]
     console.log(next_up);
-    console.log(next_up[0].children[0].src)
+    console.log(next_up[0].getElementsByTagName('img'));
     if (next_up[0].children[0].src !== next_up[1].children[0].src){
         console.log("Not a match");
-        next_up[0].style.opacity = "0.0";
-        next_up[1].style.opacity = "0.0";
+        next_up[0].getElementsByTagName('img')[0].style.opacity = "0.0";
+        next_up[1].getElementsByTagName('img')[0].style.opacity = "0.0";
     }
     //next_up[0].children[0].scr
     if (next_up[0].children[0].src === next_up[1].children[0].src){

@@ -7,7 +7,8 @@ function flipCard(id){
     let random_image = Math.floor(Math.random()*image_list.length);
     image.src = `resources/cards/${image_list[random_image]}`;
     card.appendChild(image);
-    card.setAttribute("onclick", "none");
+    //card.setAttribute("onclick", "none");
+    if //there is no card in this div
     next_up.push(card);
     image_list.splice(random_image, 1);
     if (next_up.length == 2){

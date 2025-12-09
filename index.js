@@ -6,13 +6,19 @@ function flipCard(id){
     let image = document.createElement("img");
     let random_image = Math.floor(Math.random()*image_list.length);
     image.src = `resources/cards/${image_list[random_image]}`;
-    card.appendChild(image);
     //card.setAttribute("onclick", "none");
-    if //there is no card in this div
-    next_up.push(card);
-    image_list.splice(random_image, 1);
+    //if there is no card in this div
+    console.log(card.children.length)
+    if (card.children.length == 0){
+        card.appendChild(image);
+        next_up.push(card);
+        image_list.splice(random_image, 1);
+    }
+    else{
+        image.style.opacity = "1.0";
+    }
     if (next_up.length == 2){
-       checkForMatch();
+        checkForMatch();
     }
 }
 

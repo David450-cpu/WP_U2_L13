@@ -24,8 +24,6 @@ function flipCard(id){
 }
 
 function checkForMatch(){
-    //let first_card = next_up[0]
-    //let second_card = next_up[1]
     //console.log(next_up);
     //console.log(next_up[0].getElementsByTagName('img'));
     if (next_up[0].children[0].src !== next_up[1].children[0].src){

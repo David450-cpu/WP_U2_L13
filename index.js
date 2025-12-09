@@ -19,7 +19,7 @@ function flipCard(id){
     }
 
     if (next_up.length == 2){
-        setTimeout(checkForMatch, 2000);
+        setTimeout(checkForMatch, 1000);
     }
 }
 

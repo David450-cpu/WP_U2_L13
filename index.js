@@ -6,31 +6,32 @@ function flipCard(id){
     let image = document.createElement("img");
     let random_image = Math.floor(Math.random()*image_list.length);
     image.src = `resources/cards/${image_list[random_image]}`;
+    next_up.push(card);
     //card.setAttribute("onclick", "none");
     //if there is no card in this div
-    console.log(card.children.length)
+    //console.log(card.children.length)
     if (card.children.length == 0){
         card.appendChild(image);
-        next_up.push(card);
         image_list.splice(random_image, 1);
     }
     else{
-        image.style.opacity = "1.0";
+        card.children[0].style.display = "block";
     }
+
     if (next_up.length == 2){
-        checkForMatch();
+        setTimeout(checkForMatch, 2000);
     }
 }
 
 function checkForMatch(){
     //let first_card = next_up[0]
     //let second_card = next_up[1]
-    console.log(next_up);
-    console.log(next_up[0].getElementsByTagName('img'));
+    //console.log(next_up);
+    //console.log(next_up[0].getElementsByTagName('img'));
     if (next_up[0].children[0].src !== next_up[1].children[0].src){
         console.log("Not a match");
-        next_up[0].getElementsByTagName('img')[0].style.opacity = "0.0";
-        next_up[1].getElementsByTagName('img')[0].style.opacity = "0.0";
+        next_up[0].getElementsByTagName('img')[0].style.display = "none";
+        next_up[1].getElementsByTagName('img')[0].style.display = "none";
     }
     //next_up[0].children[0].scr
     if (next_up[0].children[0].src === next_up[1].children[0].src){

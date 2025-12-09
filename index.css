@@ -46,6 +46,18 @@ a{
 
 /* ----------------------- Addtional stuff can be added below ----------------------- */
 
+.turns{
+    /* e*/
+}
+
+.p1scord{
+    /* e*/
+}
+
+.p2score{
+    /* e*/
+}
+
 .card_row{
     display: flex;
     justify-content: center;

@@ -1,5 +1,8 @@
 const image_list = ['bearcard.png', 'beavercard.png', 'deercard.png', 'foxcard.png', 'hedgehogcard.png', 'lynxcard.png', 'moosecard.png', 'raccooncard.png', 'squirrelcard.png', 'wolfcard.png', 'bearcard.png', 'beavercard.png', 'deercard.png', 'foxcard.png', 'hedgehogcard.png', 'lynxcard.png', 'moosecard.png', 'raccooncard.png', 'squirrelcard.png', 'wolfcard.png'];
 let next_up = [];
+let player1score = 0
+let player2score = 0
+let playerturn = "Player 1"
 
 function flipCard(id){
     let card = document.getElementById(id);
@@ -30,6 +33,13 @@ function checkForMatch(){
         console.log("Not a match");
         next_up[0].getElementsByTagName('img')[0].style.display = "none";
         next_up[1].getElementsByTagName('img')[0].style.display = "none";
+        if (playerturn == "Player 1"){
+            playerturn == "Player 2"
+            let turntext = document.getElementsByClassName("turns")[0];
+        }
+        else if (playerturn == "Player 2"){
+            playerturn == "Player 1"
+        }
     }
     //next_up[0].children[0].scr
     if (next_up[0].children[0].src === next_up[1].children[0].src){
@@ -37,6 +47,12 @@ function checkForMatch(){
         let match = true;
         if (match = true){
             // Cards WILL stay flipped
+            if (playerturn == "Player 1"){
+                player1score += 1;
+            }
+            else if (playerturn == "Player 2"){
+                player2score += 1;
+            }
         }
     }
     next_up = [];

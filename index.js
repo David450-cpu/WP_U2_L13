@@ -29,16 +29,20 @@ function flipCard(id){
 function checkForMatch(){
     //console.log(next_up);
     //console.log(next_up[0].getElementsByTagName('img'));
+    let turntext = document.getElementsByClassName("turns")[0];
     if (next_up[0].children[0].src !== next_up[1].children[0].src){
         console.log("Not a match");
         next_up[0].getElementsByTagName('img')[0].style.display = "none";
         next_up[1].getElementsByTagName('img')[0].style.display = "none";
         if (playerturn == "Player 1"){
             playerturn == "Player 2"
-            let turntext = document.getElementsByClassName("turns")[0];
+            sessionStorage.setItem("turn", "Player 2");
+            turntext.textContent = "Player 2's turn!"
         }
         else if (playerturn == "Player 2"){
             playerturn == "Player 1"
+            sessionStorage.setItem("turn", "Player 1");
+            turntext.textContent = "Player 1's turn!"
         }
     }
     //next_up[0].children[0].scr

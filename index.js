@@ -35,17 +35,19 @@ function checkForMatch(){
         next_up[0].getElementsByTagName('img')[0].style.display = "none";
         next_up[1].getElementsByTagName('img')[0].style.display = "none";
         if (playerturn == "Player 1"){
-            playerturn == "Player 2"
+            playerturn = "Player 2"
             sessionStorage.setItem("turn", "Player 2");
             turntext.textContent = "Player 2's turn!"
         }
         else if (playerturn == "Player 2"){
-            playerturn == "Player 1"
+            playerturn = "Player 1"
             sessionStorage.setItem("turn", "Player 1");
             turntext.textContent = "Player 1's turn!"
         }
     }
     //next_up[0].children[0].scr
+    let player1 = document.getElementsByClassName("p1score")[0];
+    let player2 = document.getElementsByClassName("p2score")[0];
     if (next_up[0].children[0].src === next_up[1].children[0].src){
         console.log("Is a match");
         let match = true;
@@ -53,9 +55,13 @@ function checkForMatch(){
             // Cards WILL stay flipped
             if (playerturn == "Player 1"){
                 player1score += 1;
+                sessionStorage.setItem("score", player1score);
+                turntext.textContent = "Player 1's turn!"
             }
             else if (playerturn == "Player 2"){
                 player2score += 1;
+                sessionStorage.setItem("score", player2score);
+                turntext.textContent = "Player 2's turn!"
             }
         }
     }

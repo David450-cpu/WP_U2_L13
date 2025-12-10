@@ -57,11 +57,13 @@ function checkForMatch(){
                 player1score += 1;
                 sessionStorage.setItem("score", player1score);
                 turntext.textContent = "Player 1's turn!"
+                player1.textContent = `Player 1 score: ${player2score}`
             }
             else if (playerturn == "Player 2"){
                 player2score += 1;
                 sessionStorage.setItem("score", player2score);
                 turntext.textContent = "Player 2's turn!"
+                player2.textContent = `Player 2 score: ${player2score}`
             }
         }
     }

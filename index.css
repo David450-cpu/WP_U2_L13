@@ -46,30 +46,46 @@ a{
 
 /* ----------------------- Addtional stuff can be added below ----------------------- */
 
+.vast-shadow-regular {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .turns{
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     color:rgb(124 45 14);
     text-shadow: 2px 2px 3px white;
+    font-size: 30px;
 
 }
 
 .p1score{
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     color: rgb(124, 45, 14);
     text-shadow: 1px 1px 2px rgb(216, 143, 7);
 }
 
 .p2score{
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     color: rgb(124, 45, 14);
     text-shadow: 1px 1px 2px rgb(216, 143, 7);
 }
 
 .wins{
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 50px;
     color: white;
     text-shadow: 2px 2px 3px rgb(124 45 14);
+    font-family: "Vast Shadow";
 }
 
 .card_row{

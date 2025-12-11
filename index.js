@@ -67,13 +67,13 @@ function checkForMatch(){
             }
             if (player1score + player2score == 10){
                 if (player1score > player2score){
-                    sessionStorage.setItem("P1wins", "Player 1 wins!");
+                    sessionStorage.setItem("P1wins", P1Total);
                     wintext.textContent = "Player 1 wins!"
                     P1Total += 1
                     let win = "Player 1"
                 }
                 else if (player2score > player1score){
-                    sessionStorage.setItem("P2wins", "Player 2 wins!");
+                    sessionStorage.setItem("P2wins", P2Total);
                     wintext.textContent = "Player 2 wins!"
                     P2Total += 1
                     let win = "Player 2"

@@ -3,6 +3,8 @@ let next_up = [];
 let player1score = 0
 let player2score = 0
 let playerturn = "Player 1"
+let P1Total = 0
+let P2Total = 0
 
 function flipCard(id){
     let card = document.getElementById(id);
@@ -45,6 +47,8 @@ function checkForMatch(){
     let player1 = document.getElementsByClassName("p1score")[0];
     let player2 = document.getElementsByClassName("p2score")[0];
     let wintext = document.getElementsByClassName("wins")[0];
+    let P1Totals = document.getElementsByClassName("p1gamewon")[0];
+    let P2Totals = document.getElementsByClassName("p2gamewon")[0];
     if (next_up[0].children[0].src === next_up[1].children[0].src){
         let match = true;
         if (match = true){
@@ -65,10 +69,14 @@ function checkForMatch(){
                 if (player1score > player2score){
                     sessionStorage.setItem("P1wins", "Player 1 wins!");
                     wintext.textContent = "Player 1 wins!"
+                    P1Total += 1
+                    let win = "Player 1"
                 }
                 else if (player2score > player1score){
                     sessionStorage.setItem("P2wins", "Player 2 wins!");
                     wintext.textContent = "Player 2 wins!"
+                    P2Total += 1
+                    let win = "Player 2"
                 }
                 else if (player1score == player2score){
                     sessionStorage.setItem("Draw", "It's a draw!");
@@ -78,6 +86,17 @@ function checkForMatch(){
         }
     }
     next_up = [];
+}
+
+function overallPlayerScore(){
+    if (win == "Player 1"){
+        sessionStorage.setItem("Player1Overall", P1Total);
+        P1Totals.textContent = `Player 1 games won: ${P1Total}!`
+    }
+    else if (win == "Player 2"){
+        sessionStorage.setItem("Player2Overall", P2Total);
+        P2Totals.textContent = `Player 2 games won: ${P2Total}!`
+    }
 }
 
 function restartbutton(){

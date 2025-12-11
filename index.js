@@ -12,7 +12,6 @@ function flipCard(id){
     next_up.push(card);
     //card.setAttribute("onclick", "none");
     //if there is no card in this div
-    //console.log(card.children.length)
     if (card.children.length == 0){
         card.appendChild(image);
         image_list.splice(random_image, 1);
@@ -27,11 +26,8 @@ function flipCard(id){
 }
 
 function checkForMatch(){
-    //console.log(next_up);
-    //console.log(next_up[0].getElementsByTagName('img'));
     let turntext = document.getElementsByClassName("turns")[0];
     if (next_up[0].children[0].src !== next_up[1].children[0].src){
-        console.log("Not a match");
         next_up[0].getElementsByTagName('img')[0].style.display = "none";
         next_up[1].getElementsByTagName('img')[0].style.display = "none";
         if (playerturn == "Player 1"){
@@ -50,7 +46,6 @@ function checkForMatch(){
     let player2 = document.getElementsByClassName("p2score")[0];
     let wintext = document.getElementsByClassName("wins")[0];
     if (next_up[0].children[0].src === next_up[1].children[0].src){
-        console.log("Is a match");
         let match = true;
         if (match = true){
             // Cards WILL stay flipped
@@ -83,7 +78,6 @@ function checkForMatch(){
         }
     }
     next_up = [];
-    console.log(next_up);
 }
 
 function restartbutton(){

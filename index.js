@@ -75,6 +75,10 @@ function checkForMatch(){
                     sessionStorage.setItem("P2wins", "Player 2 wins!");
                     wintext.textContent = "Player 2 wins!"
                 }
+                else if (player1score == player2score){
+                    sessionStorage.setItem("Draw", "It's a draw!");
+                    wintext.textContent = "It's a draw!"
+                }
             }
         }
     }

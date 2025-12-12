@@ -12,7 +12,6 @@ function flipCard(id){
     let random_image = Math.floor(Math.random()*image_list.length);
     image.src = `resources/cards/${image_list[random_image]}`;
     next_up.push(card);
-    //card.setAttribute("onclick", "none");
     //if there is no card in this div
     if (card.children.length == 0){
         card.appendChild(image);
@@ -23,7 +22,7 @@ function flipCard(id){
     }
 
     if (next_up.length == 2){
-        setTimeout(checkForMatch, 1000);
+        setTimeout(checkForMatch, 500);
     }
 }
 
@@ -71,14 +70,14 @@ function checkForMatch(){
                     wintext.textContent = "Player 1 wins!"
                     P1Total += 1
                     let win = "Player 1"
-                    overallPlayerScore()
+                    overallPlayerScore(win, P1Totals, P2Totals)
                 }
                 else if (player2score > player1score){
                     sessionStorage.setItem("P2wins", P2Total);
                     wintext.textContent = "Player 2 wins!"
                     P2Total += 1
                     let win = "Player 2"
-                    overallPlayerScore()
+                    overallPlayerScore(win, P1Totals, P2Totals)
                 }
                 else if (player1score == player2score){
                     sessionStorage.setItem("Draw", "It's a draw!");
@@ -90,7 +89,7 @@ function checkForMatch(){
     next_up = [];
 }
 
-function overallPlayerScore(){
+function overallPlayerScore(win, P1Totals, P2Totals){
     if (win == "Player 1"){
         sessionStorage.setItem("Player1Overall", P1Total);
         P1Totals.textContent = `Player 1 games won: ${P1Total}!`

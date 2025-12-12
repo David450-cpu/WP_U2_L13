@@ -71,12 +71,14 @@ function checkForMatch(){
                     wintext.textContent = "Player 1 wins!"
                     P1Total += 1
                     let win = "Player 1"
+                    overallPlayerScore()
                 }
                 else if (player2score > player1score){
                     sessionStorage.setItem("P2wins", P2Total);
                     wintext.textContent = "Player 2 wins!"
                     P2Total += 1
                     let win = "Player 2"
+                    overallPlayerScore()
                 }
                 else if (player1score == player2score){
                     sessionStorage.setItem("Draw", "It's a draw!");

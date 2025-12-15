@@ -5,6 +5,11 @@ let player2score = 0
 let playerturn = "Player 1"
 let P1Total = 0
 let P2Total = 0
+player1score = sessionStorage.getItem("scoreP1");
+player2score = sessionStorage.getItem("scoreP2");
+playerturn = sessionStorage.getItem("turn");
+P1Total = sessionStorage.getItem("Player1Overall");
+P2Total = sessionStorage.getItem("Player2Overall");
 
 function flipCard(id){
     let card = document.getElementById(id);
